@@ -8,6 +8,7 @@ In early Pokémon generations, training a balanced team required repetitive swit
 This mod introduces the modern Generation 6+ party experience sharing mechanics across all supported Pokémon games:
 - **Battle Participants:** Every Pokémon that actively took part in defeating a foe receives **100%** of the experience yield without dilution.
 - **Party Members:** Every other conscious (non-fainted, non-egg) Pokémon in the player's party receives **50%** of the experience yield.
+- **Held Exp. Share:** Holding the original Exp. Share item does not reduce anyone's share.
 - **Zero Configuration:** Always active when the mod is loaded. No options menu clutter, settings submenus, or hotkeys.
 - **Save Integrity:** Operates purely in runtime battle calculations. Does not modify player save data, items, or options. Disabling the mod restores original generation experience behavior immediately.
 

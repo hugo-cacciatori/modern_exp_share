@@ -4,7 +4,12 @@ All notable changes to the Modern Exp Share mod will be documented in this file.
 
 ## [0.1.1] - 2026-10-29
 
-- The logic now ships as a library bundled inside the mod; behaviour is unchanged.
+### Fixed
+- Holding the original Exp. Share no longer halves everyone's share on Gen 2 and Gen 3: battlers get 100% and the rest of the party 50% of the full yield, as without the item. Gen 2 stat experience keeps the game's own Exp. Share halving.
+- Gen 3 eggs never receive experience, even without the egg flag.
+
+### Changed
+- The logic now ships as a library bundled inside the mod.
 
 ## [0.1.0] - 2026-10-25
 

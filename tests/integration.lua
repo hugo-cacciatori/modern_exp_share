@@ -109,6 +109,16 @@ for _, p in ipairs(PROFILES) do
   check(awarded[2].mon == mon2 and awarded[2].split == 1, p.version .. ": participant mon2 received 100% EXP (undivided)")
   check(awarded[3].mon == mon6 and awarded[3].split == 2, p.version .. ": bench mon6 received 50% EXP")
 
+  -- Gen 3 eggs are species 412 even without an isEgg flag (src/core/game3/pokemon.lua isEgg)
+  if p.gen == 3 then
+    local egg = { species = 412, hp = 20, level = 5 }
+    local eggParty = { mon1, egg }
+    awarded = {}
+    loader.hooks:call("battle.exp_award", vanillaAward,
+      { battle = { playerParty = eggParty, party = eggParty }, alive = { mon1 }, applyShare = mockApplyShare })
+    check(#awarded == 1 and awarded[1].mon == mon1, p.version .. ": species-412 egg never awarded EXP")
+  end
+
   -- 3. Test rollback / restore restores vanilla
   if run.mod.exports and run.mod.exports.restore then
     run.mod.exports.restore()
