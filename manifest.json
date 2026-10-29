@@ -1,7 +1,7 @@
 {
   "id": "modern_exp_share",
   "name": "Modern Exp Share",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "api": 2,
   "entry": "main.lua",
   "games": ["all"],
