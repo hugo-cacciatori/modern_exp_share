@@ -1,8 +1,8 @@
 dist/
+lib/
 __pycache__/
 *.pyc
 AGENTS.md
 CLAUDE.md
 docs/
 .git-docs/
-lib/

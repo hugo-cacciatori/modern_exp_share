@@ -4,8 +4,13 @@
   "version": "0.1.1",
   "api": 2,
   "entry": "main.lua",
-  "games": ["all"],
-  "permissions": ["engine_internals"],
+  "games": [
+    "all"
+  ],
+  "permissions": [
+    "engine_internals"
+  ],
   "description": "Party-wide Gen 6+ Exp Share: 100% EXP to battle participants, 50% EXP to non-participating party members.",
-  "author": "Hugo Cacciatori"
+  "author": "Hugo Cacciatori",
+  "github": "hugo-cacciatori/modern_exp_share"
 }
